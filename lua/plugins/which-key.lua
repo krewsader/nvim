@@ -1,4 +1,4 @@
-return {
+return { -- adds a popup that shows you the available commands
   "folke/which-key.nvim",
   event = "VeryLazy",
   opts = {

@@ -1,4 +1,4 @@
-return {
+return { -- Analyses the code and constructs the AST for better syntax highlighting 
 	"nvim-treesitter/nvim-treesitter",
 	lazy = false,
 	build = ":TSUpdate",

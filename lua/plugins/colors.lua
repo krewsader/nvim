@@ -1,4 +1,4 @@
-return {
+return { -- Colorschemes
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",

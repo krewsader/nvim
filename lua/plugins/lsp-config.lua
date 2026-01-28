@@ -1,4 +1,4 @@
-return {
+return { -- Handles Language Server installation and communication
 	{
 		"williamboman/mason.nvim",
 		config = function()

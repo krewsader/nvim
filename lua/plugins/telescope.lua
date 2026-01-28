@@ -1,4 +1,4 @@
-return {
+return { -- Adds a fuzzy finder to nvim to quickly move through files
   {
     'nvim-telescope/telescope.nvim', version = '*',
     dependencies = {

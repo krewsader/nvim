@@ -1,4 +1,4 @@
-return {
+return { -- Plugins regarding Git
 	{
 		"lewis6991/gitsigns.nvim",
 		config = function()

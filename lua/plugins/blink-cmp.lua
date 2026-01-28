@@ -1,4 +1,4 @@
-return {
+return { -- Plugin for autocompletion
   'saghen/blink.cmp',
   dependencies = { 'rafamadriz/friendly-snippets' },
 
