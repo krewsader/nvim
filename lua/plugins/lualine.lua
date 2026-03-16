@@ -5,7 +5,15 @@ return { -- Adds a statusbar written in lua
     require('lualine').setup({
       options = {
         theme = 'dracula'
-      }
+      },
+      sections = {
+        lualine_x = {
+          {
+            function() return require("noice").api.status.command.get() end,
+            cond = function() return require("noice").api.status.command.has() end,
+          },
+        },
+      },
     })
   end
 }

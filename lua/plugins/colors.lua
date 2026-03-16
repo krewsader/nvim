@@ -36,6 +36,8 @@ return { -- Colorschemes
 						enabled = true,
 						style = "nvchad", -- Optional: makes telescope look extra clean
 					},
+          notify = true,
+          noice = true,
 				},
 			})
 
