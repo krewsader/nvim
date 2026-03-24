@@ -4,7 +4,7 @@ return { -- Adds a statusbar written in lua
   config = function()
     require('lualine').setup({
       options = {
-        theme = 'dracula'
+        theme = 'auto'
       },
       sections = {
         lualine_x = {
