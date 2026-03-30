@@ -1,0 +1,40 @@
+Vertical:
+Ctrl+D/Ctrl+U: Move down/up half a screen
+Line # + gg: Jump to line (abs. line #)
+zz: Center current line on screen
+
+Horizontal:
+W / B: Jumping forward/backward across words (w/o special char)
+w / b: Jumping forward/backward across words (w/special char)
+f + char: Jump to first instance of char, press ; to jump to next instance, "," to jump to previous
+v + i + "/b/[/{: jump into quotes/block/square and select content of quotes/block/square brackets/braces, also works if already inside
+y + i + "/b/[/{: yank inside quotes/block/square brackets/braces
+v/y + a + "/b/[/{: like v/y + i + "/b/[/{, but selects quotes/block/square bracktes/braces as well
+Ctrl + (/): Jump to previous/next whiteline
+
+Editing:
+I/A: Start editing in front/at the end of a line
+o/O: Start editing on a new line below/above cursor
+v/d/c + i + w: grab/delete/change current word, no matter where inside the word you are
+%: jump between braces (useful in visual mode to select everything inside some braces
+Ctrl+w: delete last word
+Ctrl+j: instead of enter
+
+Visual:
+g + v: highlight last selection
+o: when in visual mode, jump to start/end of current selection
+
+Bookmarks:
+m + char: Add bookmark with char being the label
+' + char: jump to bookmark with label char
+
+Other:
+Ctrl+i/Ctrl+o: Move forward/backward in the jump list
+* (while on a word): enter star search for that word then move n/N to move forward/backward in the search
+/ + word: search for word, n/N to move forward/backward
+:s/old/new/opt: replace old with new in the document with opt (if opt is number then amount of line where the replace will happen), g flag: global, c flag:
+>+number+j: indent number lines
+Ctrl+a/x: Increment/Decrement number
+10o0.+vipg+Ctrl+a: Numbered List from 1 to 10
+g*: search for partial matches
+:vim /name/ directory
