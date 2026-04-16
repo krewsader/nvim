@@ -2,6 +2,9 @@ vim.g.mapleader = " "
 -- vim.keymap.set("n", "<leader>cd", vim.cmd.Ex)
 -- vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>")
 vim.keymap.set("n", "<Esc>", ':noh<CR>', { silent = true })
+vim.keymap.set("n", '<leader>th', function()
+  vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+end, { desc = '[T]oggle Inlay [H]ints'})
 
 local function open_cheatsheet()
   local path = vim.fn.stdpath("config") .. "/cheatsheet.txt"
