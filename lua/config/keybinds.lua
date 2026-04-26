@@ -6,6 +6,12 @@ vim.keymap.set("n", '<leader>th', function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 end, { desc = '[T]oggle Inlay [H]ints'})
 
+-- Center screen when jumping
+vim.keymap.set("n", "n", "nzzzv", { desc = "Next search result (centered)" })
+vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous search result (centered)" })
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Half page down (centered)" })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Half page up (centered)" })
+
 local function open_cheatsheet()
   local path = vim.fn.stdpath("config") .. "/cheatsheet.txt"
   local buf = vim.api.nvim_create_buf(false, true)
