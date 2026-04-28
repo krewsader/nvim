@@ -6,7 +6,6 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.scrolloff = 10 -- Keep 10 lines above/below cursor
 vim.opt.ignorecase = true -- Case insensitive Search
 vim.opt.smartcase = true -- Case sensitive if uppercase in Search
-vim.opt.autochdir = true -- Changes the working directory automatically
 
 -- terminal
 local terminal_state = {
