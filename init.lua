@@ -55,7 +55,7 @@ local function FloatingTerminal()
 
   -- Define highlight groups for transparency
   vim.api.nvim_set_hl(0, "FloatingTermNormal", { bg = "none" })
-  vim.api.nvim_set_hl(0, "FLoatingTermBorder", { bg = "none" })
+  vim.api.nvim_set_hl(0, "FloatingTermBorder", { bg = "none" })
 
   -- Start terminal if not already running
   local has_terminal = false

@@ -6,16 +6,19 @@ return { -- Adds a file tree system on the left to navigate files more easily
     "MunifTanjim/nui.nvim",
     "nvim-tree/nvim-web-devicons", -- optional, but recommended
   },
-  lazy = false, -- neo-tree will lazily load itself
+  lazy = true, -- neo-tree will lazily load itself
+  keys = {
+    -- vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {}),
+--    vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { silent = true }),
+      { "<leader>e", ":Neotree toggle<CR>", silent = true, desc = "Neo-tree toggle" },
+  },
   config = function()
     require("neo-tree").setup({
       window = {
         width = 25,
       },
     })
-    vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
-    vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", { silent = true })
     vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", { silent = true })
-    vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { silent = true })
+    vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", { silent = true })
   end
 }
