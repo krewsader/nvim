@@ -64,7 +64,7 @@ return { -- Handles Language Server installation and communication
 					vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Jump to definition"})
 					vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts, { desc = "Code action" })
 					vim.keymap.set("n", "gl", vim.diagnostic.open_float, opts)
-          vim.keymap.set("n", "<leader>rf", ":LspRestart<CR>", { silent = true, desc = "Restart LSP" })
+          vim.keymap.set("n", "<leader>rf", "<cmd>lsp restart<CR>", { silent = true, desc = "Restart LSP" })
 				end,
 			})
 		end,
